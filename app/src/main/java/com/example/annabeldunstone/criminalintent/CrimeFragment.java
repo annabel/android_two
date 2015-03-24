@@ -1,6 +1,7 @@
 package com.example.annabeldunstone.criminalintent;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -11,7 +12,7 @@ import android.widget.EditText;
 /**
  * Created by annabeldunstone on 2/19/15.
  */
-public class CrimeFragment extends CrimeActivity {
+public class CrimeFragment extends Fragment {
     private Crime mCrime;
     private EditText mTitleField;
 
@@ -21,7 +22,7 @@ public class CrimeFragment extends CrimeActivity {
         mCrime = new Crime();
     }
 
-//    @Override
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_crime, parent, false);
         mTitleField = (EditText)v.findViewById(R.id.crime_title);
