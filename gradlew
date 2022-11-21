@@ -19,6 +19,8 @@ warn ( ) {
     echo "$*"
 }
 
+Test
+
 die ( ) {
     echo
     echo "$*"
